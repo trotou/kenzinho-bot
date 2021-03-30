@@ -65,6 +65,7 @@ bot.onText(/\b(\w*rita\w*)\b/gi, (msg, match) => {
     chatId,
     "https://ca.slack-edge.com/TQZR39SET-U017CNVS9P0-bab37137197f-512"
   );
+  bot.sendMessage(chatId, "Always on my mind");
 });
 
 bot.onText(/\/redpill/, (msg, match) => {
