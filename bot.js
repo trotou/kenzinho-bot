@@ -50,6 +50,13 @@ bot.onText(/\b(\w*daily\w*)\b/g, (msg, match) => {
   bot.sendMessage(chatId, "Me diga o q fez ontem e o q planeja fazer hj");
 });
 
+bot.onText(/\b(\w*leandro\w*)\b/g, (msg, match) => {
+  const chatId = msg.chat.id;
+  const word = match[1];
+
+  bot.sendMessage(chatId, "Leandro é corno");
+});
+
 bot.onText(/\/redpill/, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
