@@ -29,32 +29,42 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
   bot.sendMessage(chatId, resp);
 });
 
-bot.onText(/\b(\w*biblioteca\w*)\b/g, (msg, match) => {
+bot.onText(/\b(\w*biblioteca\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
   bot.sendMessage(chatId, "Você quis dizer bibllioteca?");
 });
 
-bot.onText(/\b(\w*versões\w*)\b/g, (msg, match) => {
+bot.onText(/\b(\w*versões\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
   bot.sendMessage(chatId, "Existem muitas duas versões");
 });
 
-bot.onText(/\b(\w*daily\w*)\b/g, (msg, match) => {
+bot.onText(/\b(\w*daily\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
   bot.sendMessage(chatId, "Me diga o q fez ontem e o q planeja fazer hj");
 });
 
-bot.onText(/\b(\w*leandro\w*)\b/g, (msg, match) => {
+bot.onText(/\b(\w*leandro\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
   bot.sendMessage(chatId, "Leandro é corno");
+});
+
+bot.onText(/\b(\w*rita\w*)\b/gi, (msg, match) => {
+  const chatId = msg.chat.id;
+  const word = match[1];
+
+  bot.sendPhoto(
+    chatId,
+    "https://ca.slack-edge.com/TQZR39SET-U017CNVS9P0-bab37137197f-512"
+  );
 });
 
 bot.onText(/\/redpill/, (msg, match) => {
