@@ -72,10 +72,7 @@ bot.onText(/\b(\w*davis\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
-  bot.sendVideo(
-    chatId,
-    "https://drive.google.com/file/d/156v4wme7gzX76D69v4tuN6MIJYRyZlj5/view?usp=sharing"
-  );
+  bot.sendVideo(chatId, "https://youtu.be/c8mHlW9suiE");
 });
 
 bot.onText(/\/redpill/, (msg, match) => {
