@@ -68,13 +68,13 @@ bot.onText(/\b(\w*rita\w*)\b/gi, (msg, match) => {
   bot.sendMessage(chatId, "Always on my mind");
 });
 
-bot.onText(/\b(\w*victor\w*)\b/gi, (msg, match) => {
+bot.onText(/\b(\w*davis\w*)\b/gi, (msg, match) => {
   const chatId = msg.chat.id;
   const word = match[1];
 
-  bot.sendPhoto(
+  bot.sendVideo(
     chatId,
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.letras.mus.br%2Fhumberto-gessinger%2F&psig=AOvVaw0-ZNL3W3kuJKVzgI36b5Ci&ust=1617218815759000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCqyt7f2O8CFQAAAAAdAAAAABAE"
+    "https://drive.google.com/file/d/156v4wme7gzX76D69v4tuN6MIJYRyZlj5/view?usp=sharing"
   );
 });
 
